@@ -6,6 +6,7 @@ const client = new MongoClient(mongoUrl);
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json')
 
+
 async function main(){
     await client.connect()
 }

@@ -1,10 +1,10 @@
 {
   "name": "dashboard",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node apiWithoutui.js",
+    "start": "node apiWithui.js",
     "dev": "nodemon apiWithoutui.js",
     "ui": "node apiWithui.js",
     "test": "mocha --timeout 10000",
