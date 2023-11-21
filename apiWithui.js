@@ -12,14 +12,14 @@ async function main(){
 }
 
 const collection = client.db('octnode').collection('dashboard');
-const bodyParser = require('body-parser');
+//const bodyParser = require('body-parser');
 const cors = require('cors');
 const port = process.env.PORT || 7710;
 
 app.use('/api-doc',swaggerUi.serve,swaggerUi.setup(swaggerDocument));
 
-app.use(bodyParser.urlencoded({extended:true}));
-app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({extended:true}));
+// app.use(bodyParser.json());
 app.use(cors());
 app.use(express.static(__dirname+'/public'));
 app.set('views','./src/views');
