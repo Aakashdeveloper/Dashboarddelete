@@ -4,18 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node apiWithui.js",
-    "dev": "nodemon apiWithoutui.js",
-    "ui": "node apiWithui.js",
-    "test": "mocha --timeout 10000",
-    "coverage":"nyc mocha",
-    "check-coverage":"nyc check-coverage --lines 80 --functions 80  --branches 80",
-    "precommit":"npm run check-coverage"
-  },
-  "husky":{
-    "hooks":{
-      "pre-commit":"npm run precommit"
-    }
+    "start": "node apiWithui.js"
   },
   "keywords": [],
   "author": "",
@@ -28,12 +17,5 @@
     "mongodb": "^6.2.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.0"
-  },
-  "devDependencies": {
-    "chai": "^4.3.10",
-    "chai-http": "^4.4.0",
-    "husky": "^8.0.3",
-    "mocha": "^10.2.0",
-    "nyc": "^15.1.0"
   }
 }
